@@ -28,7 +28,7 @@ def build_rag_chain():
         temperature=0.0,
     )
     vectorstore = get_vectorstore()          # same Chroma index as before
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 5}, search_type="similarity")
 
     prompt = ChatPromptTemplate.from_template("""
 You are a helpful assistant.
