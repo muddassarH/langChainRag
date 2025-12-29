@@ -1,2 +1,2 @@
 # langChainRag
-Rag that Answer from 
+Rag that Answer from ingested Documents.
